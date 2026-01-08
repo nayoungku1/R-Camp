@@ -4,7 +4,13 @@
 * Instructor: [Prof. Sohn](mailto:jsohn@handong.edu)
 * Venue: Handong Global University HDH 403
 ---
-
+## Directory 구조
+```bash
+├── cheat-sheets/  # R studio와 ggplot2의 명령어, 단축키, 공식 등을 담은 치트시트 (요약자료)
+├── data/          # 참고 데이터셋 (csv파일)
+├── day*/          # 각 강의 날짜에서 사용한 데이터셋과 도움이 될만한 자료
+└── README.md      # Overview와 기초적인 documentation
+```
 ## R & R Studio 설치
 
 ### 직접 설치
