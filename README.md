@@ -22,6 +22,7 @@
 
 ## 기본 코드 알아보기
 ### 패키지 불러오기
+* 자주 사용하는 패키지: `ggplot2`, `dplyr`
 ```R
 install.packages("패키지이름")
 library(패키지이름)
@@ -33,4 +34,13 @@ remove.packages("패키지이름") # 패키지 삭제
 getwd() # 현재 내가 사용하고 있는  Directory 확인
 dir.create("Day1") # 새로운 하위 Directory 만들기
 setwd("Day1") # 새 Directory에서 작업하기
+```
+### 패키 또는 함수 사용 도움말
+```R
+help(패키지명/함수명) # 또는
+?패키지명/함수명
+
+## 예시
+help(stats)
+?barplot
 ```
