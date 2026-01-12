@@ -6,10 +6,11 @@
 ---
 ## Directory 구조
 ```bash
-├── cheat-sheets/  # R studio와 ggplot2의 명령어, 단축키, 공식 등을 담은 치트시트 (요약자료)
-├── data/          # 참고 데이터셋 (csv파일)
-├── day*/          # 각 강의 날짜에서 사용한 데이터셋과 도움이 될만한 자료
-└── README.md      # Overview와 기초적인 documentation
+├── cheat-sheets/   # R studio와 ggplot2의 명령어, 단축키, 공식 등을 담은 치트시트 (요약자료)
+├── data/           # 참고 데이터셋 (csv파일)
+├── day*/           # 각 강의 날짜에서 사용한 데이터셋과 도움이 될만한 자료
+├── environment.yml # Conda environment
+└── README.md       # Overview와 기초적인 documentation
 ```
 ## R & R Studio 설치
 
@@ -20,10 +21,23 @@
 ### Conda에서 (Jupyter Notebook/Lab)에서 사용
 1. Miniconda / Anaconda 설치: https://www.anaconda.com/docs/getting-started/miniconda/install#windows-command-prompt
 2. 환경 만들기
+    * 직접 만들기
+        ```bash
+        conda create -n r_env -c conda-forge r-base=4.4 r-irkernel -y
+        conda activate r_env 
+        ```
+    * 또는 yaml파일로 세팅
+        ```bash
+        conda env create -f environment.yml
+        ```
+3. R 실행하기
     ```bash
-    conda create -n r_env -c r r-essentials
-    conda activate r_env 
-    jupyter lab --no-browser
+    R
+    ```
+4. Jupyter로 실행
+    ```bash
+    conda install jupyter
+    jupyter
     ```
 
 ## 기본 코드 알아보기
