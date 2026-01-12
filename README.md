@@ -37,7 +37,7 @@
 4. Jupyter로 실행
     ```bash
     conda install jupyter
-    jupyter
+    jupyter lab
     ```
 
 ## 기본 코드 알아보기
